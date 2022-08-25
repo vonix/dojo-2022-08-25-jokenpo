@@ -5,5 +5,5 @@ export default (player1, player2) => {
   const choice2Index = elements.indexOf(player2)
   const diff = choice1Index - choice2Index
   if (Math.abs(diff) === 1) return choice1Index < choice2Index ? player1 : player2
-  return player1
+  return player1 === 'pedra' ? player1 : player2
 }
