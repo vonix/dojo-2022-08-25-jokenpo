@@ -29,3 +29,15 @@ test('tesoura perde para pedra', () => {
   const playerFran = 'pedra'
   expect(jokenpo(playerVitinho, playerFran)).toBe(playerFran)
 });
+
+test('Pedra perde para Papel', () => {
+  const playerVitinho = 'papel'
+  const playerFran = 'pedra'
+  expect(jokenpo(playerVitinho, playerFran)).toBe(playerVitinho)
+});
+
+test('Pedra empata com pedra', () => {
+  const playerVitinho = 'pedra'
+  const playerFran = 'pedra'
+  expect(jokenpo(playerVitinho, playerFran)).toBe('Empate')
+});
